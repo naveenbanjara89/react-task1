@@ -8,11 +8,11 @@ const initialTasks = {
     "Test Task 3",
     "Test Task 4",
     "Test Task 5",
-    "Test Task 6",
-    "Test Task 7",
-    "Test Task 8",
-    "Test Task 9",
-    "Test Task 10"
+    // "Test Task 6",
+    // "Test Task 7",
+    // "Test Task 8",
+    // "Test Task 9",
+    // "Test Task 10"
   ],
   today: [],
   tomorrow: [],
@@ -20,17 +20,14 @@ const initialTasks = {
   nextWeek: []
 };
 
-const rows = {
+const columns = {
   unplanned: { name: "Unplanned", id: "unplanned" },
-};
-const rows = {
   today: { name: "Today", id: "today" },
-  tomorrow: { name: "Tomorrow", id: "tomorrow" }
-};
-const rows{
+  tomorrow: { name: "Tomorrow", id: "tomorrow" },
   thisWeek: { name: "This Week", id: "thisWeek" },
   nextWeek: { name: "Next Week", id: "nextWeek" }
 };
+
 const App = () => {
   const [tasks, setTasks] = useState(initialTasks);
   const [draggedTask, setDraggedTask] = useState(null);
