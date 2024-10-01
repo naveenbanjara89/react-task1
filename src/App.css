@@ -37,8 +37,13 @@ h2 {
 }
 
 .columns-container {
+  height: 100%;
+  overflow-y: scroll;
+
   display: flex;
-  flex-wrap: nowrap; /* Prevent columns from wrapping */
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap; 
   gap: 20px;
   overflow-x: auto; /* Allow horizontal scrolling if necessary */
   padding: 10px;
@@ -47,9 +52,10 @@ h2 {
 
 /* Column Styles */
 .task-column {
+  width: 80%;
   border-radius: 10px;
   padding: 15px;
-  width: 220px; /* Fixed width to maintain alignment */
+  /* width: 220px;  */
   min-height: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   /* transition: background 0.4s ease, transform 0.3s ease; */
@@ -109,11 +115,13 @@ h2 {
 
 /* Task Row Colors */
 .task-item:nth-child(odd) {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light Blue Gradient */
+  color: white;
+  background: #00000059;
 }
 
 .task-item:nth-child(even) {
-  background: linear-gradient(135deg, #bbdefb, #90caf9); /* Slightly Darker Blue Gradient */
+  color: white;
+  background: #00000059;
 }
 
 .task-item:active {
